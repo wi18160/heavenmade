@@ -19,7 +19,7 @@ html{
 
 margin: 0;
 padding: 0;
-background-color: var(--primary-color); /* Notlösung, da man irgendwie manchmal weiter hochschrollt und dadurch beim Loading-Screen ein weißer Rand oben entsteht.
+background-color: var(--primary-color); /* Notlösung, da man irgendwie manchmal weiter hochschrollt und dadurch beim Loading-Screen ein weißer Rand oben entsteht. */
 
 
 }
