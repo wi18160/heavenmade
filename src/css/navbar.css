@@ -1,0 +1,54 @@
+
+@import url("../css/style.css");
+nav {
+
+    height: 10vh;
+    margin-top: 10px;
+    position: fixed;
+    z-index: 5;
+    width: 100vw;
+    
+}
+
+.nav-link{
+
+    color: rgb(5, 209, 236) !important; 
+    margin-left: 10px;
+    line-height: 10px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+    font-family: 'Poiret One', cursive, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+
+.nav-link:hover{
+
+    color: var(--primary-background-nontransp) !important;
+    
+}
+
+.navbar-toggler{
+
+    margin-right: 50px;
+}
+
+ .navbar .navbar-toggler-icon {
+    background-image: url("../img/sandwich.svg");
+  }
+  
+.navbar .navbar-toggler {
+    border-color: var(--primary-color);
+  } 
+
+
+  @media only screen and (min-width: 768px){
+
+    .nav-link{
+
+        letter-spacing: 2px;
+
+    }
+
+  }
