@@ -19,7 +19,6 @@ html{
 
 margin: 0;
 padding: 0;
-background-color: var(--primary-color); /* Notlösung, da man irgendwie manchmal weiter hochschrollt und dadurch beim Loading-Screen ein weißer Rand oben entsteht. */
 
 
 }
@@ -110,7 +109,6 @@ footer{
     position: relative;
     min-height: 100vh;
     width: 100vw;
-    margin-top: 10px;
 
 }
 
