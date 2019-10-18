@@ -24,23 +24,16 @@
 
 
 <script>
-   
-   $(window.on("load"),function(){
-
-    $("#vid").on("load",function(){
  
- $(".loader").fadeOut("slow",function(){
-
-     $("body").css("overflow-y","scroll");
-
- });
-
- });
-
-
-
-   });
-    
+    $(window).on("load",function(){
+ 
+     $(".loader").fadeOut("slow",function(){
+ 
+         $("body").css("overflow-y","scroll");
+ 
+     });
+ 
+     });
  
     </script>
 
@@ -84,7 +77,7 @@
 
     <section class='landing fullscreen'>
 
-            <video autoplay muted loop id="vid">
+            <video autoplay muted loop id="vid" poster="./src/img/poster.png">
                 <source src="./src/mp4/video.mp4" type="video/mp4" id="cooking-video">
             </video>
      
@@ -152,11 +145,12 @@
                 <div class="col-12 col-sm-12 col-md-12 col-l-4 col-xl-4">
 
                         <div class="card">
-                                <img class="card-img-top" src="./src/img/bar.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="./src/img/bar.jpg" alt="Bar">
                                 <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                  <h5 class="card-title">Bar</h5>
+                                  <p class="card-text">Unsere abgetrennte Bar bietet Abends für unsere Erwachsenen Gäste viel Entertainment.
+                                        Genieße nach einem leckeren Essen in unserem Restaurant ein paar frisch zubereitete Cocktails, oder ein Glas Whiskey unter Begleitung von toller Live-Musik!
+                                    Auch hier wirst du von der Auswahl überrascht sein!  </p>
                                 </div>
                               </div>
                 </div>
@@ -164,11 +158,10 @@
                 <div class="col-12 col-sm-12 col-md-12 col-l-4 col-xl-4">
 
                         <div class="card">
-                                <img class="card-img-top" src="./src/img/coffee.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="./src/img/coffee.jpg" alt="Coffee">
                                 <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                  <h5 class="card-title">Café</h5>
+                                  <p class="card-text"><b>Du</b> bist ein Kaffeeliebhaber? Unsere Barrista bereiten <b>Dir</b> den leckersten Kafee in der Stadt zu!Wir machen unseren Kaffe nur mit gerösteten <i>100% Fair-Trade Bio Kaffeebohnen</i>, die himmlisch lecker schmecken!Selbstverständlich kannst <b>Du</b> bei uns viele weitere leckere, kalte oder warme Getränke genießen.</p>
                                 </div>
                               </div>
                 </div>
@@ -176,11 +169,13 @@
                 <div class="col-12 col-sm-12 col-md-12 col-l-4 col-xl-4">
 
                         <div class="card">
-                                <img class="card-img-top" src="./src/img/pizza.jpg" alt="Card image cap">
+                                <img class="card-img-top" src="./src/img/pizza.jpg" alt="Pizza">
                                 <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                  <h5 class="card-title">Restaurant</h5>
+                                  <p class="card-text">Frisch zubereitetes, leckeres Essen, angepasst an <b>deine</b> Bedürfnisse. 
+                                    Die besten Chefköche aus der Umgebung zaubern dir ein köstliches Essen, wie frisch vom Himmel gesandt!
+                                    Unser auswahlreiches Speisemenü bietet Auswahl für jeden, egal ob <b>Fleischliebhaber, Vegetarier</b> oder <b>Veganer</b>!
+                                 Zusätzlich haben wir eine breite Auswahl für unsere Gäste, die <b>koschere</b> oder <b>Halal</b> Speisen bevorzugen. </p>
                                 </div>
                               </div>
                 </div>
