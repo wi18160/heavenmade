@@ -19,9 +19,31 @@
 <link href='./src/css/style.css' rel="stylesheet" type="text/css">
 
 
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+
+
+<script>
+   
+    $(window).on("load",function(){
+ 
+     $(".loader").fadeOut("slow",function(){
+ 
+         $("body").css("overflow-y","scroll");
+ 
+     });
+ 
+     });
+ 
+    </script>
+
 </header>
 
 <body>
+
+    <div class="loader fullscreen">
+        <h1> Bitte warten Sie, während wir die Seite für Sie einrichten...</h1>
+    </div>    
 
         <nav class="navbar navbar-expand-md  navbar-light fixed-top ">
 
@@ -225,9 +247,6 @@
 
 
     </section>
-
-
-    <script src="./src/scripts/loading.js"></script>
 
 </body>
 
