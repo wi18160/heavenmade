@@ -2,7 +2,7 @@
 
 <html>
 
-<head>
+<header>
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
     <!-- Fontawesome -->
@@ -18,20 +18,8 @@
 <link href='./src/css/navbar.css' rel="stylesheet" type="text/css">
 <link href='./src/css/style.css' rel="stylesheet" type="text/css">
 
-<script>
 
-while((document.getElementsByTagName('body')[0] !== undefined)){
-
-console.log("Still loading");
-
-}
-
-
-</script>
-
-
-
-</head>
+</header>
 
 <body>
 
@@ -61,7 +49,7 @@ console.log("Still loading");
     <section class='landing fullscreen'>
 
             <video autoplay muted loop>
-                <source src="./src/mp4/video.mp4" type="video/mp4">
+                <source src="./src/mp4/video.mp4" type="video/mp4" id="cooking-video">
             </video>
      
     
@@ -237,6 +225,11 @@ console.log("Still loading");
 
 
     </section>
+
+
+    <script src="./src/scripts/loading.js"></script>
+
+</body>
 
     <footer>
 
