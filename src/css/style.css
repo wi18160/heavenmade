@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+
 /* Globale Definitionen */
 
 
@@ -29,8 +31,11 @@ body{
     overflow-y: hidden;
     overflow-x: hidden;
     scroll-snap-type: y proximity;
+    font-family: 'Times New Roman', Times, serif;
+    
 
 }
+
 
 .loader {
     position: relative;
@@ -45,11 +50,12 @@ body{
     align-items: center;
 }  
 
-.loader h1, h6{
+.loader h1, .loader h6{
 
     color: var(--secondary-color);
     margin-top: 20px;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
     
 
 }
@@ -120,17 +126,27 @@ footer{
 }
 
 
-/* Globale Eigenschaften für Landing-Header definieren */
+
+
+
+.landing-header h1, .landing-header h2, .landing-header h3, .about-us-container h1, .about-us-container h3, .reference-container h1{
+
+    font-family: 'Fredericka the Great', cursive,'Courier New', Courier, monospace;
+
+}
+
 
 .landing-header h1{
 
     color: var(--primary-color);
     text-align: center;
+    
 }
 .landing-header h2{
 
     color: var(--secondary-color);
     text-align: center;
+ 
     
 }
 .landing-header h3{
@@ -138,6 +154,7 @@ footer{
     color: var(--secondary-color);
     background-color: var(--primary-background);
     text-align: center;
+ 
 }
 
 
@@ -517,6 +534,11 @@ footer{
        width: 350px;
        font-size: 60px;
  
+     }
+
+     .about-us-container{
+
+        padding-top: 150px;
      }
 
     .reference-container{
