@@ -19,16 +19,20 @@
 <link href='./src/css/style.css' rel="stylesheet" type="text/css">
 
 
+<!-- Jquery für den Loadingscreen-->
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
 
 
 <script>
  
+    //Wenn Window vollständig geladen wurde
     $(window).on("load",function(){
  
+        //Soll der Loadingscreen mit einem fadeOut Effekt verschwinden
      $(".loader").fadeOut("slow",function(){
  
+        //Scroll wird wieder freigegeben damit nicht bereits im Loading-Screen runtergescrollt werden kann
          $("body").css("overflow-y","scroll");
  
      });
@@ -41,6 +45,9 @@
 
 <body>
 
+    <!-- Die Webseite wurde in Sections aufgeteilt -->
+
+    <!-- Loading screen besteht aus drei CSS-Made Bubbles die eine inifinite-loop Animation ausführen-->
     <div class="loader fullscreen">
     <div class="container row loader-container ">
        <div class="bubble-container"> 
@@ -52,6 +59,7 @@
     </div>
     </div>    
 
+      <!-- Navbar mit Bootstrap und selfmade Logo-->
         <nav class="navbar navbar-expand-md  navbar-light fixed-top ">
 
                 <a class='navbar-brand' href='#'><img src='./src/img/logo-100x100.png' width='100' height='100'></a>
@@ -64,7 +72,7 @@
         
                 <ul class="navbar-nav mr-auto">
         
-                    <li class="nav-item"><a class="nav-link" href='#aboutus'>Über uns</a></li>
+                    <li class="nav-item"><a class="nav-link" href='#about-us'>Über uns</a></li>
                     <li class="nav-item"><a class="nav-link" href='#services'>Dienstleistungen</a></li>
                     <li class="nav-item"><a class="nav-link" href='#references'>Kundenmeinungen</a></li>
                     <li class="nav-item"><a class="nav-link" href='#contact'>Kontakt</a></li>
@@ -75,29 +83,36 @@
         </nav>
 
 
+    <!-- Landing Page mit dem Video und den Überschriften -->
     <section class='landing fullscreen'>
 
-            <video autoplay muted loop id="vid" poster="./src/img/poster.png">
+          <!-- Video -->
+            <video autoplay muted loop id="vid" poster="./src/img/poster.png" alt="Video in dem Essen zubereitet wird">
                 <source src="./src/mp4/video.mp4" type="video/mp4" id="cooking-video">
             </video>
      
     
     
 
+              <!-- Überschriften -->
         <div class="container landing-header">
         <h1> HEAVEN MADE</h1>
         <h2> Food straight from HEAVEN</h2>
         
+          <!-- Wird wenn genug Platz vorhanden ist nebeneinander angezeigt ansonsten untereinander (mobil)-->
         <div class='landing-description'><h3>Cafe</h3><h3>Restaurant</h3><h3>Bar</h3></div> 
     </div>
     
 
     </section>
   
-    <section class="about-us fullscreen">
+      <!-- Über Uns-->
+    <section class="about-us fullscreen" id="about-us">
 
+          <!-- Haupt-Container mit Bootstrap Container-->
         <div class="about-us-container container">
 
+              <!-- Bild und Text mit Bootstrap-Row nebeneinander oder untereinander angezeigt -->
         <div class="row">
 
             <div class="col-12 col-sm-12 col-md-12 col-l-6 col-xl-6 ">
@@ -108,16 +123,16 @@
                         <br></br> Mein Name ist José Paco und ich bin der Erfinder und Eigentümer von Heaven Made.
                         <br> Ziel dieses Etablissements ist es die Stadt mit dem leckersten <b>Essen</b> und <b>Trinken</b> zu versorgen.
                         <br></br>
-                        Dabei stehst <b>du</b> für uns immer im Mittelpunkt!
+                        Dabei stehst <b>Du</b> für uns immer im Mittelpunkt!
                         <br> Täglich geben ich und mein Team uns große Mühe, um alle deine Wünsche zu erfüllen, denn ein Besuch bei uns soll sich wortwörtlich <b>himmlisch</b> anfühlen.
                         <br></br> Mit einem Abschluss in <i>Culinary Management</i> und einer zehn jährigen Erfahrung als Chef-Koch in Puerto Rico, habe ich sehr viel Erfahrung in der Küche.
-                        <br> Mit weiteren fünf Köchen mit verschiedenen ethnischen Hintergründen, ist es uns möglich dich auf eine geschmacklich kulinarische Reise zu schicken.
-                        <br></br> Zusätzlich zu dem leckersten Essen in der Stadt, ist es lohnenswert tagsüber unseren Cafe zu besuchen und einen leckeren Getränk zu genießen. Abends bieten wir 
+                        <br> Mit weiteren fünf Köchen mit verschiedenen ethnischen Hintergründen, ist es uns möglich Dich auf eine geschmacklich kulinarische Reise zu schicken.
+                        <br></br> Zusätzlich zu dem leckersten Essen in der Stadt, ist es lohnenswert tagsüber unseren Cafe zu besuchen und ein leckeres Getränk zu genießen. Abends bieten wir 
                         unterhaltsame Events in der Bar für jeden Erwachsenen an!
                         <br></br>
-                        Also, worauf wartest du noch? Reserviere doch am besten schon mal einen Platz für deine nächste Mahlzeit.
+                        Also, worauf wartest Du noch? Reserviere doch am besten schon mal einen Platz für deine nächste Mahlzeit.
                         <br></br>
-                        Ich freue mich auf <b>dich</b> und bis bald!
+                        Ich freue mich auf <b>Dich</b> und bis bald!
 
                         <h3>José Paco</h3>
                     </p>
@@ -126,7 +141,7 @@
 
             <div class="col-12 col-sm-12 col-md-12 col-l-6 col-xl-6 ">
                 
-                    <img src="./src/img/chef.jpg">
+                    <img src="./src/img/chef.jpg" alt="Bild von Jose Paco, Koch und Erfinder von Heaven Made">
 
             </div>
 
@@ -136,13 +151,15 @@
     </section>
 
 
-    <section class="services fullscreen">
+      <!-- Section der Dienstleistungen, ganz einfach mit Bootstrap-Row nebeneinander oder untereinander angezeigt -->
+    <section class="services fullscreen" id="services">
 
-        <div class="container services-card-container">
+          <!-- Kleine margins mit Bootstrap eingefügt, damit die Cards etwas Platz haben -->
+        <div class="container services-card-container mb-5">
 
             <div class="row">
 
-                <div class="col-12 col-sm-12 col-md-12 col-l-4 col-xl-4">
+                <div class="col-12 col-sm-12 col-md-12 col-l-4 col-xl-4 mt-5">
 
                         <div class="card">
                                 <img class="card-img-top" src="./src/img/bar.jpg" alt="Bar">
@@ -150,15 +167,15 @@
                                   <h5 class="card-title">Bar</h5>
                                   <p class="card-text">Unsere abgetrennte Bar bietet Abends für unsere Erwachsenen Gäste viel Entertainment.
                                         Genieße nach einem leckeren Essen in unserem Restaurant ein paar frisch zubereitete Cocktails, oder ein Glas Whiskey unter Begleitung von toller Live-Musik!
-                                    Auch hier wirst du von der Auswahl überrascht sein!  </p>
+                                    Auch hier wirst Du von der Auswahl überrascht sein!  </p>
                                 </div>
                               </div>
                 </div>
 
-                <div class="col-12 col-sm-12 col-md-12 col-l-4 col-xl-4">
+                <div class="col-12 col-sm-12 col-md-12 col-l-4 col-xl-4 mt-5">
 
                         <div class="card">
-                                <img class="card-img-top" src="./src/img/coffee.jpg" alt="Coffee">
+                                <img class="card-img-top" src="./src/img/coffee.jpg" alt="Kaffee">
                                 <div class="card-body">
                                   <h5 class="card-title">Café</h5>
                                   <p class="card-text"><b>Du</b> bist ein Kaffeeliebhaber? Unsere Barrista bereiten <b>Dir</b> den leckersten Kafee in der Stadt zu!Wir machen unseren Kaffe nur mit gerösteten <i>100% Fair-Trade Bio Kaffeebohnen</i>, die himmlisch lecker schmecken!Selbstverständlich kannst <b>Du</b> bei uns viele weitere leckere, kalte oder warme Getränke genießen.</p>
@@ -166,7 +183,7 @@
                               </div>
                 </div>
 
-                <div class="col-12 col-sm-12 col-md-12 col-l-4 col-xl-4">
+                <div class="col-12 col-sm-12 col-md-12 col-l-4 col-xl-4 mt-5">
 
                         <div class="card">
                                 <img class="card-img-top" src="./src/img/pizza.jpg" alt="Pizza">
@@ -186,7 +203,8 @@
         
     </section>
 
-    <section class="reference fullscreen">
+      <!-- Kundenbewertungen -->
+    <section class="reference fullscreen" id="references">
 
         <div class="container reference-container">
 
@@ -194,7 +212,7 @@
 
                 <div class="col-12 col-sm-12 col-md-12 col-l-6 col-xl-6">
 
-                    <img src="./src/img/customer.jpg">
+                    <img src="./src/img/customer.jpg" alt="Foto von Mark Schmidt, Stammkunde bei Heaven Made">
 
                 </div>
 
@@ -205,13 +223,16 @@
                         <br> Die Bedienung ist immer nett und hilfsbereit und die Bestellung ziemlich schnell erledigt.
                         <br> Leider sind die Wartezeiten aufgrund der Beliebtheit des Restaurants länger als gewohnt, weshalb es dafür Abzug gibt. </p>
                         
-                        <div class='star-container'>
+                        <div class='star-container '>
     
-                            <img src='./src/img/full-star.svg'>
-                            <img src='./src/img/full-star.svg'>
-                            <img src='./src/img/full-star.svg'>
-                            <img src='./src/img/full-star.svg'>
-                            <img src='./src/img/empty-star.svg'>
+                            
+                            <img src='./src/img/full-star.svg' alt="Bild von einem vollen Stern">
+                            <img src='./src/img/full-star.svg' alt="Bild von einem vollen Stern">
+                            <img src='./src/img/full-star.svg' alt="Bild von einem vollen Stern">
+                            <img src='./src/img/full-star.svg' alt="Bild von einem vollen Stern">
+                            <img src='./src/img/empty-star.svg' alt="Bild von einem leeren Stern">
+
+                        
     
                         </div>
                     
@@ -225,7 +246,8 @@
 
     </section>
 
-    <section class="contact fullscreen">
+      <!-- Kontaktformular -->
+    <section class="contact fullscreen" id="contact">
 
         <div class="contact-container">
 
@@ -245,7 +267,7 @@
                                 <textarea type="text" style="resize:none" placeholder="Nachricht" id="input-text"></textarea>
                                
                                
-                                <button type="button" class="btn btn-primary">Absenden</button>
+                                <button type="button" class="btn">Absenden</button>
                         </div>
                     
                 </div>
@@ -259,6 +281,7 @@
 
 </body>
 
+   <!-- Footer mit den Links und weiteren Infos-->
     <footer>
 
         <div class="">
